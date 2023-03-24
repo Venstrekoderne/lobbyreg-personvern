@@ -12,9 +12,13 @@ Alle data er sortert etter hvem dataene omhandler
 
 # Formål med lobbyregisteret og datainnsamlingen
 
-Formålet med å samle inn disse dataene er å lage en nettside og et tilhørende API hvor befolkningen i Norge har tilgang til å se hvilke organisasjoner og lobbyister Stortingsrepresentantene møter med, hvor hyppig de møtes, og i grove trekk hva de har snakket om. Målet er å gi åpenhet rundt lobbyisme og med det både forebygge lobbyisme som ikke tåler dagens lys, og vise at "god lobbyisme" - det at folk og organisasjoner tar kontakt med politikere for å overbevise eller fortelle om sine synspunkter - er i det store og det hele en god ting. 
+Formålet med å samle inn disse dataene er å lage en nettside og et tilhørende API hvor befolkningen i Norge har tilgang til å se hvilke organisasjoner og lobbyister Stortingsrepresentantene møter med, hvor hyppig de møtes, og i grove trekk hva de har snakket om. 
+
+Målet er å gi åpenhet rundt lobbyisme og med det både forebygge lobbyisme som ikke tåler dagens lys, og vise at det meste av lobbyisme er "god lobbyisme": at folk og organisasjoner tar kontakt med politikere for å overbevise eller fortelle om sine synspunkter. 
 
 Vi mener at befolkningen har en rett til innsyn i prosessene som leder frem til at en politiker tar et valg, og vi tror at åpenhet om møtene politikerene har hatt også vil gi aktører som ikke har fått presentert sin side av saken en mulighet til å invitere til et møte. 
+
+Det er frivillig for stortingspartiene å delta i lobbyregisteret, og vi lagrer kun møter som involverer de partiene som deltar.
 
 # Data vi behandler og lagrer
 
@@ -22,7 +26,11 @@ Vi mener at befolkningen har en rett til innsyn i prosessene som leder frem til 
 
 ### Representantenes og lobbyistenes møter
 
-Ingen møter legges i lobbyregisteret uten at representanten eller en rådgiver for representanten har lagt dem inn selv. Generelt lagrer vi ikke informasjon om møter som er hemmeligstemplet eller møter med varslere.
+Ingen møter legges i lobbyregisteret uten at representanten eller en rådgiver for representanten har lagt dem inn selv. 
+
+- **Begrensinger**: Vi lagrer ikke informasjon om møter som er hemmeligstemplet eller møter med varslere.
+- **Hvor lagres informasjonen**: Informasjonen vil lagres på en norsk-eid server.
+- **Hvordan slettes informasjonen**: Informasjon om møter som er nylig lagt inn kan slettes og endres fritt av brukerkontoene som har redigeringstilgang til den. Informasjon om møter som har ligget offentlig lenger enn 1 dag kan redigeres og fjernes fra det offentlige søket av brukerkontoene som har redigeringstilgang, men da vil det loggføres en endringslogg for møtet som spesifiseres ytterligere under. Denne kan i utgangspunktet ikke slettes.
 
 Informasjon vi **kan** lagre om representantens møter (ikke all informasjon vil lagres om alle møter):
 
@@ -56,6 +64,11 @@ Informasjon vi **kan** lagre om representantens møter (ikke all informasjon vil
   - **Hvorfor**: For å kunne gi kontekst til hvorfor møtet skjedde. 
   - **Begrensinger**: Dette skrives av representanten eller representantens rådgiver. 
 
+- 📝 Endringslogg for møtet (f.eks. "Ola Nordmann endret tema 24. april fra X til Y" eller "Møtet ble slettet 5. april av representant Y, med begrunnelse: xyz")
+  - Endringsloggen inneholder alle tidligere versjoner av møtet. Det er altså ikke mulig å slette informasjon fra møtet uten at denne også slettes fra endringsloggen.
+  - Endringsloggen kan slettes eller endres kun av administrator, og det vil kun bli gjort om det er grunn til å tro at informasjon som er ønsket slettet ikke er formålstjenlig for lobbyregisteret eller ikke kan lagres per denne personvernserklæringen
+  - Det føres ikke endringslogg på møter som kun har ligget inne i 1 dag - slik at man har mulighet til å angre opprettelser av møter (og slette dem helt) eller endre små feil uten at dette trenger komme i endringsloggen.
+
 ### Representantenes møter som **_ikke_** skal vises i lobbyregisteret
 
 For å enklere hente informasjon ut til lobbyregisteret kan representanten koble på sine kalendre. 
@@ -66,6 +79,10 @@ Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **kan*
   -  **Hvorfor:** ID-en er satt av kalendertjenesten representanten bruker, og lagres for å kunne filtrere ut hvilke møter som allerede er behnadlet og lagt til eller valgt bort for lobbyregisteret. 
 
 Vi lagrer ikke, og behandler heller ikke på våre servere, annen informasjon enn en unik ID om møter som ikke skal vises i lobbyregisteret. All behandling av disse skjer på "klienten" - altså lokalt på PC-en eller mobilen til den som legger inn informasjonen.
+
+- **Hvor lagres informasjonen**: ID-ene lagres på en norsk-eid server.
+- **Hvordan slettes informasjonen**: ID-ene inneholder ikke personinformasjon, men kan allikevel bes slettes av brukeren de er tilknyttet.
+
 
 ### Påloggingsinformasjon til representantens kalender
 
@@ -80,9 +97,15 @@ Denne `token`en vil aldri bli dekryptert på våre servere, og kan derfor ikke b
 
 En dekryptert Token kan bli lagret i representantens egen nettleser for å forenkle så man ikke må skrive inn passordet hver gang.
 
+- **Hvor lagres informasjonen**: Tokens vil lagres på en norsk-eid server.
+- **Hvordan slettes informasjonen**: Tokens kan slettes av brukeren de er tilknyttet.
+
 ### Representantene og rådgivernes brukerkontoer i lobbyregisteret
 
 Vi lagrer e-post og navn på alle brukere som har innlogging. Disse knyttes til møtene i lobbyregisteret de har rett til å administrere, typisk sine egne.
+
+- **Hvor lagres informasjonen**: Brukerkontoer vil lagres på en norsk-eid server.
+- **Hvordan slettes informasjonen**: Brukerkontoer kan slettes av brukeren selv. 
 
 ## Data om besøkende til nettsiden
 
