@@ -1,4 +1,4 @@
-# Her finner du full oversikt over alle persondata som behandles i Lobbyreg.no
+# Her finner du full oversikt over alle persondata som behandles eller er planlagt behandlet i Lobbyreg.no
 
 Alle data skal ha info om:
 
