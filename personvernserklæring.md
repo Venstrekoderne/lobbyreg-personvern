@@ -24,7 +24,7 @@ Det er frivillig for stortingspartiene å delta i lobbyregisteret, og vi lagrer 
 
 # Behandlingsansvarlig
 
-Lobbyreg.no er drevet av partiet Venstre. Venstres står ansvarlig for forsvarlig lagring og behandling av persondataene i systemet. Kontaktperson er Venstrekoderne ved leder Daniel Jackson, <daniel@digitalfrivillighet.no>
+Lobbyreg.no er drevet av partiet Venstre. Venstre står ansvarlig for forsvarlig lagring og behandling av persondataene i systemet. Kontaktperson er Venstrekoderne ved leder Daniel Jackson, <daniel@digitalfrivillighet.no>
 
 ## Databehandlere og hvor dataene lagres
 
