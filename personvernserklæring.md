@@ -18,31 +18,7 @@ Vi mener at befolkningen har en rett til innsyn i prosessene som leder frem til 
 
 # Data vi behandler og lagrer
 
-## Data om Stortingsrepresentantene og deres rådgivere
-
-### Representantenes møter som ikke skal vises i lobbyregisteret
-
-For å enklere hente informasjon ut til lobbyregisteret kan representanten koble på sine kalendre. 
-
-Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **vil** vi lagre: 
-
-- En unik ID per møte i kalenderen, også møter som ikke skal i lobbyregisteret.
-  -  **Hvorfor:** ID-en er satt av kalendertjenesten representanten bruker, og lagres for å kunne filtrere ut hvilke møter som allerede er behnadlet og lagt til eller valgt bort for lobbyregisteret. 
-
-Vi lagrer ikke, og behandler heller ikke på våre servere, annen informasjon enn en unik ID om møter som ikke skal vises i lobbyregisteret. All behandling av disse skjer på "klienten" - altså lokalt på PC-en eller mobilen til den som legger inn informasjonen.
-
-### Påloggingsinformasjon til representantens kalender
-
-For å enklere hente ut informasjon til lobbyregisteret kan representanten koble på sine kalendre. 
-
-Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **kan** vi lagre: 
-
-- En ende-til-ende kryptert `token` som gir lesetilgang til kalenderen til representanten
-  - **Hvorfor**: For å kunne koble seg på kalenderen og hente ut informasjon som gjør det enklere å fylle ut informasjon til lobbyregisteret
-  
-Denne `token`en vil aldri bli dekryptert på våre servere, og kan derfor ikke brukes av oss eller en angriper som får kontroll på serveren. Den vil krypteres basert på et passord som ikke lagres server-side, og som representanten eller rådgiveren vil måtte skrive inn for å starte import fra sin kalender på en ny nettleser eller datamaskin.
-
-En dekryptert Token kan bli lagret i representantens egen nettleser for å forenkle så man ikke må skrive inn passordet hver gang.
+## Data om Stortingsrepresentantene, deres rådgivere, og lobbyistene de møter
 
 ### Representantenes og lobbyistenes møter
 
@@ -80,6 +56,29 @@ Informasjon vi **kan** lagre om representantens møter (ikke all informasjon vil
   - **Hvorfor**: For å kunne gi kontekst til hvorfor møtet skjedde. 
   - **Begrensinger**: Dette skrives av representanten eller representantens rådgiver. 
 
+### Representantenes møter som ikke skal vises i lobbyregisteret
+
+For å enklere hente informasjon ut til lobbyregisteret kan representanten koble på sine kalendre. 
+
+Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **vil** vi lagre: 
+
+- En unik ID per møte i kalenderen, også møter som ikke skal i lobbyregisteret.
+  -  **Hvorfor:** ID-en er satt av kalendertjenesten representanten bruker, og lagres for å kunne filtrere ut hvilke møter som allerede er behnadlet og lagt til eller valgt bort for lobbyregisteret. 
+
+Vi lagrer ikke, og behandler heller ikke på våre servere, annen informasjon enn en unik ID om møter som ikke skal vises i lobbyregisteret. All behandling av disse skjer på "klienten" - altså lokalt på PC-en eller mobilen til den som legger inn informasjonen.
+
+### Påloggingsinformasjon til representantens kalender
+
+For å enklere hente ut informasjon til lobbyregisteret kan representanten koble på sine kalendre. 
+
+Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **kan** vi lagre: 
+
+- En ende-til-ende kryptert `token` som gir lesetilgang til kalenderen til representanten
+  - **Hvorfor**: For å kunne koble seg på kalenderen og hente ut informasjon som gjør det enklere å fylle ut informasjon til lobbyregisteret
+  
+Denne `token`en vil aldri bli dekryptert på våre servere, og kan derfor ikke brukes av oss eller en angriper som får kontroll på serveren. Den vil krypteres basert på et passord som ikke lagres server-side, og som representanten eller rådgiveren vil måtte skrive inn for å starte import fra sin kalender på en ny nettleser eller datamaskin.
+
+En dekryptert Token kan bli lagret i representantens egen nettleser for å forenkle så man ikke må skrive inn passordet hver gang.
 
 ### Representantene og rådgivernes brukerkontoer i lobbyregisteret
 
