@@ -1,2 +1,5 @@
 # lobbyreg-personvern
-Personvernspolicy for Lobbyreg
+
+Personvernspolicy for Lobbyreg.no
+
+Her ligger til envher tid den nyeste personvernserkæringen vår, med full revisjonshistorikk.
