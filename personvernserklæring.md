@@ -10,6 +10,8 @@ Alle data skal ha info om:
 
 Alle data er sortert etter hvem dataene omhandler
 
+---
+
 # Formål med lobbyregisteret og datainnsamlingen
 
 Formålet med å samle inn disse dataene er å lage en nettside og et tilhørende API hvor befolkningen i Norge har tilgang til å se hvilke organisasjoner og lobbyister Stortingsrepresentantene møter med, hvor hyppig de møtes, og i grove trekk hva de har snakket om. 
@@ -20,11 +22,15 @@ Vi mener at befolkningen har en rett til innsyn i prosessene som leder frem til 
 
 Det er frivillig for stortingspartiene å delta i lobbyregisteret, og vi lagrer kun møter som involverer de partiene som deltar.
 
+---
+
 # Data vi behandler og lagrer
+
+---
 
 ## Data om Stortingsrepresentantene, deres rådgivere, og lobbyistene de møter
 
-### Representantenes og lobbyistenes møter
+### Representantenes og lobbyistenes møter som skal i lobbyregisteret
 
 Ingen møter legges i lobbyregisteret uten at representanten eller en rådgiver for representanten har lagt dem inn selv. 
 
@@ -100,12 +106,16 @@ En dekryptert Token kan bli lagret i representantens egen nettleser for å foren
 - **Hvor lagres informasjonen**: Tokens vil lagres på en norsk-eid server.
 - **Hvordan slettes informasjonen**: Tokens kan slettes av brukeren de er tilknyttet.
 
-### Representantene og rådgivernes brukerkontoer i lobbyregisteret
+---
+
+## Brukerkontoer i lobbyregisteret
 
 Vi lagrer e-post og navn på alle brukere som har innlogging. Disse knyttes til møtene i lobbyregisteret de har rett til å administrere, typisk sine egne.
 
 - **Hvor lagres informasjonen**: Brukerkontoer vil lagres på en norsk-eid server.
-- **Hvordan slettes informasjonen**: Brukerkontoer kan slettes av brukeren selv. 
+- **Hvordan slettes informasjonen**: Brukerkontoer kan slettes av brukeren selv.
+
+---
 
 ## Data om besøkende til nettsiden
 
