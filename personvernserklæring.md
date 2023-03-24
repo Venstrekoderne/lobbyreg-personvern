@@ -8,8 +8,6 @@ Alle data skal ha info om:
 - Når og hvordan de **lagres**
 - Når og hvordan de **slettes**
 
-Alle data er sortert etter hvem dataene omhandler
-
 ---
 
 # Formål med lobbyregisteret og datainnsamlingen
@@ -21,6 +19,16 @@ Målet er å gi åpenhet rundt lobbyisme og med det både forebygge lobbyisme so
 Vi mener at befolkningen har en rett til innsyn i prosessene som leder frem til at en politiker tar et valg, og vi tror at åpenhet om møtene politikerene har hatt også vil gi aktører som ikke har fått presentert sin side av saken en mulighet til å invitere til et møte. 
 
 Det er frivillig for stortingspartiene å delta i lobbyregisteret, og vi lagrer kun møter som involverer de partiene som deltar.
+
+---
+
+# Behandlingsansvarlig
+
+Lobbyreg.no er drevet av partiet Venstre. Venstres står ansvarlig for forsvarlig lagring og behandling av persondataene i systemet. Kontaktperson er Venstrekoderne ved leder Daniel Jackson, <daniel@digitalfrivillighet.no>
+
+## Databehandlere og hvor dataene lagres
+
+Dette er ikke bestemt ennå. Vi etterstreber å lagre dataene på en norsk-eid server.
 
 ---
 
