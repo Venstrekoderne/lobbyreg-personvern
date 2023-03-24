@@ -34,7 +34,7 @@ Informasjon vi **kan** lagre om representantens møter (ikke all informasjon vil
   - **Hvorfor**: For å kunne gi befolkningen informasjon om når møtene skjedde, så de enklere kan sees i sammenheng, uten å lagre informasjon ned på time eller minutt om når møtedeltakerne møttes.
   - **Begrensinger**: Vi lagrer ikke tidspunkt, kun dato. Vi viser ikke offentlig møter som er i fremtiden for å beskytte sikkerheten til de involverte, selv om de kan lagres i forkant om representatene legger dem inn.
 
-- 🧔 Lobbyisten:
+- 🧑‍🤝‍🧑 Lobbyisten:
   - Lobbyistens kategori (f.eks. "Oljenæring" eller "Fagforening" eller "Miljøbevegelsen")
     - **Hvorfor**: For å kunne lage statistikk over hva slags representant oftest møter med.
   - Hvem man er der på vegne av: 
@@ -45,22 +45,22 @@ Informasjon vi **kan** lagre om representantens møter (ikke all informasjon vil
       - **Hvorfor**: Dette er kjernen av lobbyregisteret. Hvilke personer forsøker påvirke politikerene?  Vi mener vi har en legitim interesse til å lagre disse dataene.
       - **Begrensinger**: Vi lagrer kun navn om det ikke er en mindre personlig måte å identifisere lobbyisten på. Normalt vil de fleste være der på vegne av en organisasjon.
 
-- Deltakere fra Stortingspartiene:
+- 🧑‍🤝‍🧑 Deltakere fra Stortingspartiene:
   - Navn og partitilhørlighet på alle Stortingsrepresentanter i møtet
     - **Hvorfor**: Dette er kjernen av lobbyregisteret. Hvilke representanter møter med hvem? Vi mener vi har en legitim interesse til å lagre disse dataene.
   - Rådgivere i møtet, samt hvilken representant de er rådgiver for, evt partitilhørlighet om de ikke er knyttet til en enkeltrepresentant
     - **Hvorfor**: Rådgivere er ofte stedfortredere for representantene. Vi ønsker lagre hvilken representant de er der for.
     - **Begrensinger**: Vi lagrer ikke navn på rådgivere, da det ikke trengs for å oppnå formålet og vil offentlig knytte deres partitilhørlighet til navn.
 
-- Møtets tema (f.eks. "Møte om laksenæringens vilkår")
+- 💡 Møtets tema (f.eks. "Møte om laksenæringens vilkår")
   - **Hvorfor**: For å kunne gi kontekst til hvorfor møtet skjedde. 
   - **Begrensinger**: Dette skrives av representanten eller representantens rådgiver. 
 
-### Representantenes møter som ikke skal vises i lobbyregisteret
+### Representantenes møter som **_ikke_** skal vises i lobbyregisteret
 
 For å enklere hente informasjon ut til lobbyregisteret kan representanten koble på sine kalendre. 
 
-Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **vil** vi lagre: 
+Om representanten gjør dette, enten selv eller gjennom en rådgiver, så **kan** vi lagre: 
 
 - En unik ID per møte i kalenderen, også møter som ikke skal i lobbyregisteret.
   -  **Hvorfor:** ID-en er satt av kalendertjenesten representanten bruker, og lagres for å kunne filtrere ut hvilke møter som allerede er behnadlet og lagt til eller valgt bort for lobbyregisteret. 
